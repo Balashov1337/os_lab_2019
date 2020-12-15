@@ -44,10 +44,10 @@
 
 Убйиство процесса
 ```
-lenovo@15ikb:~$ ps -xal | grep defunct
+root@oss-labi:~$ ps -xal | grep defunct
 1  1000 18889 18888  20   0      0     0 -      Z    pts/0      0:00 [zombie] <defunct>
 0  1000 18949 18933  20   0  15648  1060 pipe_w S+   pts/2      0:00 grep --color=auto defunct
-lenovo@15ikb:~$ kil -KILL 18888
+root@oss-labi:~$ kil -KILL 18888
 
 Command 'kil' not found, did you mean:
 
@@ -62,8 +62,8 @@ Command 'kil' not found, did you mean:
 
 Try: sudo apt install <deb name>
 
-lenovo@15ikb:~$ kill -KILL 18888
-lenovo@15ikb:~$
+root@oss-labi:~$ kill -KILL 18888
+root@oss-labi:~$
 
 ```
 
@@ -83,7 +83,7 @@ https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81-%D0%B7%
 
 
 ```
-lenovo@15ikb:~/University/os_lab_2019/lab4/src$ ./process_memory
+root@oss-labi:~/University/os_lab_2019/lab4/src$ ./process_memory
 
 Address etext: DAFEDB9D
 Address edata: DB1EF018
@@ -123,12 +123,12 @@ This message is output by the function showit()
 * Вместе с ответом программа должна выводить время подсчета суммы (генерация массива не должна попадать в замер времени).
 * Вынести функцию, которая считает сумму в отдельную библиотеку.
 ```
-lenovo@15ikb:~/University/os_lab_2019/lab4/src$ ./parallel_sum --seed 12 --array_size 20 --threads_num 8
+root@oss-labi:~/University/os_lab_2019/lab4/src$ ./parallel_sum --seed 12 --array_size 20 --threads_num 8
 Array: 60 14 94 8 23 55 29 73 97 64 78 69 57 74 68 4 7 67 87 60
 Total: 1088
 Elapsed time: 1.074000ms
 
-lenovo@15ikb:~/University/os_lab_2019/lab4/src$ ./parallel_sum --seed 12 --array_size 20 --threads_num 9
+root@oss-labi:~/University/os_lab_2019/lab4/src$ ./parallel_sum --seed 12 --array_size 20 --threads_num 9
 Array: 60 14 94 8 23 55 29 73 97 64 78 69 57 74 68 4 7 67 87 60
 Ошибка сегментирования (стек памяти сброшен на диск)
 
