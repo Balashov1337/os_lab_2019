@@ -100,7 +100,7 @@ grep выполняет регистронезависимый поиск стр
 * С помощью команды `grep`, используя `pipe` и редирект (`>`), запишите в файл `with_cake.txt` все строчки из файла `cake_rhymes.txt`, в которых есть слово `cake`.
 
 `root@oss-labi:~/os_lab_2019/lab1/src# grep -i "cake" ./cake_rhymes.txt > with_cake.txt`
-
+export PATH=$PATH:/#/os_lab_2019/lab1/src/printcat
 
 * Сделайте команду `rm` "тихой", используя редирект в `/dev/null`.
 root@oss-labi:~/os_lab_2019/lab1/src# rm tutstuts > /dev/null
@@ -179,7 +179,7 @@ $ echo $NOW
 
 * Сделайте файл `hello.sh` исполняемым, выполните его.
 Но он и так уже исполняемый...
-```
+```??
 oot@oss-labi:~/os_lab_2019/lab1/src#  chmod ugo+x hello.sh
 root@oss-labi:~/os_lab_2019/lab1/src# ./hello.sh
 Hello, world!

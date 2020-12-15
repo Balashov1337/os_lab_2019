@@ -171,3 +171,5 @@ Elapsed time =    0.000 seconds
 
 1. [Аргументы коммандной строки для objdump](https://sourceware.org/binutils/docs/binutils/objdump.html)
 -->
+
+СОбрать статическую библеотеку                                                                                                                                                                                     Собрать динамическую библеотеку                                                                                                                                                                                    Revertstring => заменить первый и последний символ на 0                                                                                                                                                            Пересобрать только библеотеку запускаем    
