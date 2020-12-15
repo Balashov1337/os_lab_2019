@@ -191,10 +191,9 @@ Hello, world!
 ```
 root@oss-labi:~/os_lab_2019/lab1/src# chmod ugo+x bashscript
 root@oss-labi:~/os_lab_2019/lab1/src# ./bashscript
-/home/nastya/Рабочий стол/lab1/src
-04-11-2020+14:50:23
-/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
-
+/root/os_lab_2019/lab1/src
+12-15-2020+12:40:03
+/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
 ```
 
 # Задание 4\* (повышенной сложности)
