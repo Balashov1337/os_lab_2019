@@ -9,8 +9,8 @@
 Написать функцию GetMinMax в find\_max\_min.c, которая ищет минимальный и максимальный элементы массива, на заданном промежутке.
 Разобраться, что делает программа в sequiential\_min\_max.c, скомпилировать, проверить, что написанный вами GetMinMax работает правильно.
 ```
-lenovo@15ikb:~/University/os_lab_2019/lab3/src$ gcc -o zad1 find_min_max.c sequential_min_max.c utils.c
-lenovo@15ikb:~/University/os_lab_2019/lab3/src$ ./zad1 2 4
+root@oss-labi:~/os_lab_2019/lab3/src# gcc -o zad1 find_min_max.c sequential_min_max.c utils.c
+root@oss-labi:~/os_lab_2019/lab3/src# ./zad1 2 4
 array: 1505335290 1738766719 190686788 260874575
 min: 190686788
 max: 1738766719
@@ -33,12 +33,12 @@ max: 1738766719
 Завершить программу parallel\_min\_max.c, так, чтобы задача нахождения минимума и максимума в массиве решалась параллельно.
 Если выставлен аргумент `by_files` для синхронизации процессов использовать файлы (задание 2), в противном случае использовать pipe (задание 3).
 ```
-lenovo@15ikb:~/University/os_lab_2019/lab3/src$ gcc -o zad2 parallel_min_max.c find_min_max.c utils.c
+root@oss-labi:~/os_lab_2019/lab3/src# gcc -o zad2 parallel_min_max.c find_min_max.c utils.c
 
-lenovo@15ikb:~/University/os_lab_2019/lab3/src$ ./zad2
+root@oss-labi:~/os_lab_2019/lab3/src# ./zad2
 Usage: ./zad2 --seed "num" --array_size "num" --pnum "num"
 
-lenovo@15ikb:~/University/os_lab_2019/lab3/src$ ./zad2  --seed 23 --array_size 8 --pnum 4
+root@oss-labi:~/os_lab_2019/lab3/src# ./zad2  --seed 23 --array_size 8 --pnum 4
 array: 1562469902 1039845534
 array: 2025653534 739593874
 array: 605335584 563009619
@@ -47,7 +47,7 @@ Min: 563009619
 Max: 2025653534
 Elapsed time: 0.511000ms
 
-lenovo@15ikb:~/University/os_lab_2019/lab3/src$ ./zad2  --seed 23 --array_size 8 --pnum 2
+root@oss-labi:~/os_lab_2019/lab3/src# ./zad2  --seed 23 --array_size 8 --pnum 2
 array: 1562469902 1039845534 2025653534 739593874
 array: 994290584 1198075102 605335584 563009619
 Min: 563009619
@@ -70,7 +70,7 @@ Elapsed time: 1.302000ms
 
 Изучить все targets в makefile, будьте готовы объяснить, за что они отвечают. Используя `makefile`, собрать получившиеся решения. Добавьте target `all`, отвечающий за сборку всех программ.
 ```
-lenovo@15ikb:~/University/os_lab_2019/lab3/src$ make -f makefile
+root@oss-labi:~/os_lab_2019/lab3/src# make -f makefile
 gcc -o sequential_min_max find_min_max.o utils.o sequential_min_max.c -I.
 gcc -o parallel_min_max utils.o find_min_max.o parallel_min_max.c -I.
 gcc -o exec_sequential exec_sequential.c
