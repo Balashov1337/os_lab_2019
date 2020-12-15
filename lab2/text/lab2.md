@@ -11,8 +11,8 @@
 В папке swap лежит 3 файла: swap.c, swap.h и main.c. Ваша задача закончить метод Swap в swap.c, так, чтобы он менял местами два символа. Скомпилировать программу. Если вы все сделали верно, то программа, которую вы собрали выведет "b a".
 ```
 
-/nastya/Рабочий стол/os_lab_2019-master/lab2/src/swap$ gcc -o Prog main.c swap.c
-/nastya/Рабочий стол/os_lab_2019-master/lab2/src/swap$ ./Prog
+root@oss-labi:~/os_lab_2019/lab2/src/swap$ gcc -o Prog main.c swap.c
+root@oss-labi:~/os_lab_2019/lab2/src/swap$ ./Prog
 b a
 
 ```
@@ -35,8 +35,8 @@ b a
 Изучить код main.c, скомпилировать программу, рассказать, как она работает и, что делает.
 
 ```
-/nastya//Рабочий стол/os_lab_2019-master/lab2/RevertString/src$ gcc -o Prog main.c revert_string.c
-/nastya//Рабочий стол/os_lab_2019-master/lab2/RevertString/src$ ./Prog qwerty
+root@oss-labi:~/os_lab_2019/lab2/src gcc -o Prog main.c revert_string.c
+root@oss-labi:~/os_lab_2019/lab2/RevertString/src$ ./Prog qwerty
 Reverted: ytrewq
 ```
 

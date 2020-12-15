@@ -93,8 +93,8 @@ gcc -o exec_sequential exec_sequential.c
 2. [Небольшой пример, как комбинировать fork и exec](https://ece.uwaterloo.ca/~dwharder/icsrts/Tutorials/fork_exec/)
 
 ```
-lenovo@15ikb:~/University/os_lab_2019-Юнус/lab3/src$ gcc -o qwe task5.c
-lenovo@15ikb:~/University/os_lab_2019-Юнус/lab3/src$ ./qwe 2 3
+root@oss-labi:~/os_lab_2019/lab3/src# gcc -o qwe task5.c
+lroot@oss-labi:~/os_lab_2019/lab3/src# ./qwe 2 3
 Array: 90 19 88
 min: 19
 max: 90
